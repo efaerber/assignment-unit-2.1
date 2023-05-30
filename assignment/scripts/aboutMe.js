@@ -1,13 +1,13 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 var firstName = 'Elliot';
-// 2 - Create a second variable called `lastName` and assign it the value of your last name
-var lastName = 'Faerber';
+// 2 - Create a second letiable called `lastName` and assign it the value of your last name
+let lastName = 'Faerber';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
 var fullName = 'Elliot Faerber';
 // 4 - Console log the value of `fullName`
-console.log(fullName,'Elliot Faerber');
+console.log(fullName);
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 let luckyNumber = 6;
 // 6 - Console log this sentence, adding in the variables you created above: 
@@ -19,12 +19,20 @@ var adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 var food = 'kc bbq';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-var pets = '0';
+var pets = 0;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-var friendsPets = '2';
+var friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
-var pets = [];
-pets.push('2 cats named Rick and Gus')
+
+console.log('pets: ', pets);
+pets ++;
+
+console.log('pets: ', pets);
+pets ++;
+console.log('pets: ', pets);
+
+console.log('pets: ', pets);
+
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets =4;
 
@@ -33,6 +41,8 @@ const allowedPets =4;
 // if it's not true, console log "How about we stay home?"
 if (adventurous === true) {
     console.log("Adventures are great!");
+} else if (adventurous === false) {
+    console.log("How about we stay home?")
 }
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
@@ -53,7 +63,21 @@ if (luckyNumber === 2 && adventurous === true) {
 
 if (pets < allowedPets) {
     console.log("I can have more pets!");
+} else if (pets === allowedPets) {
+    console.log("I have enough pets")
+} else if (pets > allowedPets) {
+    console.log("Oh no, I have too many pets!")
 }
+
+
+
+
+
+
+
+
+
+
 
 // STRETCH GOALS:
 
@@ -62,6 +86,10 @@ if (pets < allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+
+
+
+
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
